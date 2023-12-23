@@ -37,3 +37,18 @@ public class PhishingAnalyzer {
         keywords.put("Actividad sospechosa de Outlook", 2);
         keywords.put("Loteria", 3);
 
+// Texto de ejemplo (puedes cambiar esto según tus necesidades)
+        String textToAnalyze = "Este es un mensaje de phishing urgente. Necesitamos verificar tu cuenta.";
+
+        // Inicializar el total de puntos
+        int totalPoints = 0;
+
+        // Analizar el texto
+        for (Map.Entry<String, Integer> entry : keywords.entrySet()) {
+            String keyword = entry.getKey();
+            int points = entry.getValue();
+
+            // Verificar si la palabra clave aparece en el texto
+            int occurrences = countOccurrences(textToAnalyze.toLowerCase(), keyword.toLowerCase());
+
+

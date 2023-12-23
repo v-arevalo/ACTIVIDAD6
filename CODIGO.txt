@@ -68,3 +68,17 @@ TERCER PARTE
         // Mostrar el total de puntos al final
         System.out.println("Total de puntos para el mensaje: " + totalPoints);
     }
+
+CUARTA PARTE
+
+    // Método para contar las ocurrencias de una palabra en una línea
+    private static int countOccurrences(String line, String keyword) {
+        int count = 0;
+        int index = line.indexOf(keyword);
+        while (index != -1) {
+            count++;
+            index = line.indexOf(keyword, index + 1);
+        }
+        return count;
+    }
+}

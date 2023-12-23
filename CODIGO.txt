@@ -51,4 +51,14 @@ public class PhishingAnalyzer {
             // Verificar si la palabra clave aparece en el texto
             int occurrences = countOccurrences(textToAnalyze.toLowerCase(), keyword.toLowerCase());
 
+// Imprimir resultados para todas las palabras clave
+            System.out.println("Palabra clave: " + keyword + ", ocurrencias: " + occurrences + ", puntos acumulados: " + totalPoints);
+
+            // Sumar puntos si hay ocurrencias
+            totalPoints += points * occurrences;
+        }
+
+        // Mostrar el total de puntos al final
+        System.out.println("Total de puntos para el mensaje: " + totalPoints);
+    }
 

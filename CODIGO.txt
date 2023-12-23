@@ -1,0 +1,41 @@
+PRIEMRA PARTE
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class PhishingAnalyzer {
+
+    public static void main(String[] args) {
+        // Crear un mapa de palabras clave y sus puntajes
+        Map<String, Integer> keywords = new HashMap<>();
+        keywords.put("importante", 3);
+        keywords.put("urgente", 3);
+        keywords.put("contraseña", 3);
+        keywords.put("verificación", 2);
+        keywords.put("cuenta", 2);
+        keywords.put("confirmar", 2);
+        keywords.put("actualización", 2);
+        keywords.put("seguridad", 2);
+        keywords.put("cambiar", 2);
+        keywords.put("iniciar sesión", 2);
+        keywords.put("problema", 1);
+        keywords.put("ganador", 1);
+        keywords.put("gratis", 1);
+        keywords.put("Keep Calm and Carry On", 2);
+        keywords.put("caduca en 2 días", 1);
+        keywords.put("Etiqueta", 3);
+        keywords.put("Factura", 3);
+        keywords.put("Publicar", 2);
+        keywords.put("La contraseña de su cuenta ha caducado, actualice su contraseña", 3);
+        keywords.put("no te pierdas esta oferta única", 2);
+        keywords.put("le hemos grabado mientras utilizaba un sitio web porno", 3);
+        keywords.put("Se requiere verificación", 3);
+        keywords.put("billete", 2);
+        keywords.put("notificación", 2);
+        keywords.put(".exe", 3);
+        keywords.put("dhl", 1);
+        keywords.put("declaración", 2);
+        keywords.put("fedex", 2);
+        keywords.put("Actividad sospechosa de Outlook", 2);
+        keywords.put("Loteria", 3);
+
